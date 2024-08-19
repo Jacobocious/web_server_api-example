@@ -1,0 +1,354 @@
+/* by Jacob Jackson for CSCI4131 homework 3 */
+/* cascade styling sheets file */
+
+
+/* myschedule and aboutme styling */
+table, th, td {
+	font-family: sans-serif;
+	border-collapse: collapse;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+table {
+	margin-right: 40px;
+}
+			
+h2 {
+	font-family: 'Arial', sans-serif;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+}
+
+li {
+	font-family: sans-serif;
+}
+
+nav li {
+	float: left;
+}
+
+nav li a {
+	font-family: sans-serif;
+	display: block;
+	color: blue;
+	text-align: center;
+	padding: 3px 6px;
+	text-decoration: none;
+	border: 1px solid black;
+}
+
+nav li a:hover {
+	background-color: rgb(31,161,72);
+	color: white;
+}
+
+table {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+td img {
+	width: 500px;
+	height: 325px;
+	display: block;
+}
+
+td iframe {
+	display: block;
+}
+
+iframe {
+	border: none;
+}
+
+#schedule-table tbody tr:hover {
+    background-color: rgb(170, 188, 175);
+}
+
+#schedule-table thead tr th,
+#schedule-table tbody tr td {
+	padding: 12px;
+}
+
+#playlist-table {
+	border: 0;
+	padding: 0px;
+}
+
+#playlist-table td {
+	border: 1px solid black;
+	padding: 0;
+	margin: 0px;
+}
+
+#playlist-table #insta-cell {
+	padding: 20px 20px 20px 20px;
+}
+
+#jacob-info {
+	padding: 10px;
+}
+
+#jacob-img {
+	padding: 0;
+}
+
+#image-container {
+	margin-top: 150px;
+	width: 400px;
+	height: 267px;
+}
+
+#large-image {
+	width: 100%;
+	height: 100%;
+}
+
+#clock-table {
+	padding: 0px;
+	margin: 0px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    gap: 2px;
+    height: calc(100vh - 50px);
+}
+
+#directions-panel {
+    grid-row: 1;
+    grid-column: 1;
+    overflow-y: auto;
+    height: 0;
+}
+
+#map-container {
+    grid-row: 1;
+    grid-column: 1 / 3;
+    height: 60%;
+}
+
+#sched-map {
+    width: 100%;
+    height: 100%;
+}
+
+#menu-container {
+    grid-row: 1;
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+}
+
+#search-menu {
+    border-bottom: 2px solid rgb(135, 135, 135);
+	padding-bottom: 120px;
+	background-color: rgb(161, 201, 170);
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 40px;
+}
+
+#other-search {
+	display: none;
+}
+
+#travel-mode-form {
+	margin-top: 5px;
+	padding-top: 0;
+}
+
+#radio-walk-mode {
+	display: flex;
+	flex-direction: row;
+	gap: 3px;
+	margin-bottom: 3px;
+}
+
+#walk-mode {
+	margin-top: 0;
+	padding-top: 3px;
+}
+
+#radio-drive-mode {
+	display: flex;
+	flex-direction: row;
+	gap: 3px;
+	margin-bottom: 3px;
+}
+
+#drive-mode {
+	margin-top: 0;
+	padding-top: 0;
+	padding-top: 3px;
+}
+
+#radio-transit-mode {
+	display: flex;
+	flex-direction: row;
+	gap: 3px;
+}
+
+#transit-mode {
+	margin-top: 0;
+	padding-top: 0;
+	padding-top: 3px;
+}
+
+#directions-input {
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 40px;
+}
+
+#get-directions {
+	margin-top: 0;
+}
+
+#search-radius {
+	padding: 5px;
+	margin-top: 5px;
+}
+
+#destination {
+	margin-bottom: 15px;
+}	
+
+#chrome-icon {
+	height: 15px;
+	width: 15px;
+}
+
+.menu-icon {
+    float: left;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+
+html, body {
+    height: 100%;
+	padding: 10px;
+}
+
+.content-wrap {
+	display: flex;
+	align-items: flex-start;
+}
+
+.highlight-row {
+	background-color: rgb(220,220,220);
+}
+
+
+
+/* form styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="tel"],
+input[type="time"], 
+select,
+textarea {
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 4px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(76, 175, 80);
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: rgb(69, 160, 73);
+}
+
+input:invalid:focus {
+    outline-color: red;
+}
+
+#form-container {
+	display: flex;
+}
+
+#form-map {
+	margin-top: 50px;
+	margin-left: 60px;
+	height: 400px;
+	width: 750px;
+}
+
+
+/* Stock Styling */
+
+#stock-header {
+	margin-top: 45px;
+}
+
+#stock-form {
+	margin-top: 0;
+	padding-top: 0;
+	padding-left: 0;
+	margin-left: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+	width: 420px;
+}
+
+#stock-symbol {
+    flex-grow: 1;
+    margin-right: 8px;
+    height: 36px;
+    padding: 0 10px; 
+}
+
+#stock-button {
+    height: 36px;
+    padding: 0 20px;
+	width: 250px;
+}
+
+#api-response {
+    width: 400px;
+    height: 200px;
+    margin-top: 4px;
+}

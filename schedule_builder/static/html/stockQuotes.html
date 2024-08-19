@@ -1,0 +1,35 @@
+<!-- by Jacob Jackson for CSCI 4131 Homework 3 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My Stocks</title>
+		<link rel="stylesheet" href="/static/css/style.css">
+	</head>
+   
+	<body>
+		<nav>
+			<ul>
+				<li><a href="MySchedule.html">My Schedule &#x1F4C5;</a></li>
+				<li><a href="AboutMe.html">About Me &#128102;</a></li>
+				<li><a href="MyForm.html">Form Input &#128221;</a></li>
+				<li><a href="EventLog.html">Form History &#128337;</a></li>
+				<li><a href="stockQuotes.html">Stocks &#128200;</a></li>
+				<li><a href="MyServer.html">My Server &#128225;</a></li>
+			</ul>
+		</nav>
+		
+		<div id="stock-header">&#128202;<strong>Enter Stock Symbol:</strong></div>
+		<form id="stock-form">
+			<input type="text" id="stock-symbol" placeholder="e.g., AAPL, MSFT">
+			<button id="stock-button" type="button">Get Stock Data</button>
+		</form>
+		
+		<label for="api-response"><strong>API Response:</strong></label>
+		<textarea id="api-response" readonly></textarea>
+		
+		<script src="/static/js/stocks.js"></script>
+		<script src="/static/js/script.js"></script>  
+	</body>
+   
+</html>

@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>MyServer</title>
+    <style>
+        div{
+            text-align:center;
+            margin-bottom: 5%;
+        }
+        #links ul li{
+            display: inline;
+            margin-right: 30px;
+        }
+        label{
+          margin-right: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>MyServer Page</h1></br>
+    </center>
+    <div id='links'>
+      <ul>
+          <li> <a href="Coffman.html"> Coffman Picture</a> </li>
+          <li> <a href="Coffman_N_OuttaSpace.html"> Coffman + OuttaSpace</a> </li>
+          <li> <a href="OuttaSpace.html"> OuttaSpace MP3</a> </li>
+          <li> <a href="/file-explorer"> File Explorer</a></li>
+      </ul>
+    </div>
+    <hr>
+
+    <div>
+      <form action="/redirect" method="get">
+        Search Term: <input type="text" name="query">
+        <select name="site">
+          <option value="youtube">YouTube</option>
+          <option value="google">Google</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <div>
+      <form action="/calculator" method="get">
+        <input type="text" name="operand1">
+        <select name="operator">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+        <input type="text" name="operand2">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    
+    <div>
+      <a href="MySchedule.html"> Go to MySchedule page   </a>
+      <a href="MyForm.html">   Go to MyForm page</a>
+    </div>
+  </body>
+</html>

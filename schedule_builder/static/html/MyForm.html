@@ -1,0 +1,67 @@
+<!-- by Jacob Jackson for CSCI4131 homework 3
+	form submission page -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<title>Add Event Form</title>
+		<link rel="stylesheet" href="/static/css/style.css"> 
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="MySchedule.html">My Schedule &#x1F4C5;</a></li>
+				<li><a href="AboutMe.html">About Me &#128102;</a></li>
+				<li><a href="MyForm.html">Form Input &#128221;</a></li>
+				<li><a href="EventLog.html">Form History &#128337;</a></li>
+				<li><a href="stockQuotes.html">Stocks &#128200;</a></li>
+				<li><a href="MyServer.html">My Server &#128225;</a></li>
+			</ul>
+		</nav>
+		<div id="form-container">
+			<form id="eventForm" method="POST" action="/EventLog.html">
+			
+				<label for="eventName">Event Name:</label>
+				<input type="text" id="eventName" name="eventName" required pattern="[A-Za-z0-9]+[A-Za-z0-9 ]*" title="Event name must be alphanumeric">
+
+				<label for="dayOfWeek">Day of Week:</label>
+				<select id="dayOfWeek" name="dayOfWeek" required>
+					<option value="">Select a day</option>
+					<option value="Sunday">Sun</option>
+					<option value="Monday">Mon</option>
+					<option value="Tuesday">Tue</option>
+					<option value="Wednesday">Wed</option>
+					<option value="Thursday">Thu</option>
+					<option value="Friday">Fri</option>
+					<option value="Saturday">Sat</option>
+				</select>
+
+				<label for="startTime">Start Time:</label>
+				<input type="time" id="startTime" name="startTime" required>
+
+				<label for="endTime">Stop Time:</label>
+				<input type="time" id="endTime" name="endTime" required>
+
+				<label for="phone">Phone Number:</label>
+				<input type="tel" id="phone" name="phone" required pattern="[1-9]{3}-[0-9]{3}-[0-9]{4}" title="Format is ###-###-####">
+
+				<label for="location">Location:</label>
+				<input type="text" id="location" name="location" required>
+
+				<label for="extraInfo">Extra Info:</label>
+				<textarea id="extraInfo" name="extraInfo" required></textarea>
+
+				<label for="url">Enter URL for the Extra Info:</label>
+				<input type="url" id="url" name="url" required>
+
+				<input type="submit" value="Submit">
+				<input type="reset" value="Clear">
+			</form>
+			
+			<div id="form-map"></div>
+		</div>
+		<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRiWhkXKzdmgy6WdzfnP9uCr-nwgESb3E&libraries=places&callback=setupFormMap"></script>
+		<script src="/static/js/script.js"></script>
+	</body>
+</html>

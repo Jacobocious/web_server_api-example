@@ -1,0 +1,189 @@
+<!-- by Jacob Jackson for CSCI 4131 Homework 3 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<title>My Weekly Schedule</title>
+		<link rel="stylesheet" href="/static/css/style.css">
+	</head>
+   
+	<body>
+		<nav>
+			<ul>
+				<li><a href="MySchedule.html">My Schedule &#x1F4C5;</a></li>
+				<li><a href="AboutMe.html">About Me &#128102;</a></li>
+				<li><a href="MyForm.html">Form Input &#128221;</a></li>
+				<li><a href="EventLog.html">Form History &#128337;</a></li>
+				<li><a href="stockQuotes.html">Stocks &#128200;</a></li>
+				<li><a href="MyServer.html">My Server &#128225;</a></li>
+			</ul>
+		</nav>
+		
+		<h2>My Schedule &#x1F4C5;</h2>
+		<div class="content-wrap">
+			<table id="schedule-table">
+				<thead>
+					<tr style="background-color: rgb(40,117,66); color: white;">
+						<th>Day</th>
+						<th>Event</th>
+						<th>Time</th>
+						<th>Event Location (Virtual or Physical)</th>
+						<th>Phone Number</th>
+						<th>URL</th>
+					</tr>
+				</thead>
+			
+				<tbody>
+					<tr>
+						<td>Monday</td>
+						<td>CSci 4211 Lecture</td>
+						<td>14:30 - 15:45</td>
+						<td data-img-src="/static/img/Tate.png">116 Church St SE, Minneapolis, MN 55455</td>
+						<td>No Phone Number</td>
+						<td><a href="https://umtc.catalog.prod.coursedog.com/courses/7906551">CSci 4211 Info</a></td>
+					</tr> 
+					<tr class="highlight-row">
+						<td>Monday</td>
+						<td>Dinner</td>
+						<td>18:00 - 19:00</td>
+						<td data-img-src="/static/img/haiku.jpg">754 N Plaza Dr, Mendota Heights, MN 55120</td>
+						<td>(651) 237-2406</td>
+						<td><a href="https://haikumendota.com/">Haiku Japanese Bistro</a></td>
+					</tr>   
+					<tr>
+						<td>Tuesday</td>
+						<td>CSci 3081W Lecture</td>
+						<td>14:30 - 15:45</td>
+						<td data-img-src="/static/img/keller.jpg">Keller Hall, 200 Union St SE, Minneapolis, MN 55455</td>
+						<td>No Phone Number</td>
+						<td><a href="https://umtc.catalog.prod.coursedog.com/courses/7930761">CSci 3081W Info</a></td>
+					</tr>
+					<tr class="highlight-row">
+						<td>Tuesday</td>
+						<td>CSci 4131 Lecture</td>
+						<td>16:00 - 18:30</td>
+						<td data-img-src="/static/img/zoom.jpg">Zoom (Virtual)</td>
+						<td>No Phone Number</td>
+						<td><a href="https://umtc.catalog.prod.coursedog.com/courses/7906541">CSci 4131 Info</a></td>
+					</tr>
+					<tr>
+						<td>Wednesday</td>
+						<td>Lunch</td>
+						<td>12:00 - 12:45</td>
+						<td data-img-src="/static/img/chipotle.jpg">860 Rosedale Shopping Center Ste 1020, Roseville, MN 55113</td>
+						<td>(651) 633-2300</td>
+						<td><a href="https://locations.chipotle.com/mn/roseville/860-rosedale-shopping-ctr?utm_source=google&utm_medium=yext&utm_campaign=yext_listings">Chipotle</a></td>
+					</tr>
+					<tr class="highlight-row">
+						<td>Wednesday</td>
+						<td>CSci 4211 Lecture</td>
+						<td>14:30 - 15:45</td>
+						<td data-img-src="/static/img/Tate.png">116 Church St SE, Minneapolis, MN 55455</td>
+						<td>No Phone Number</td>
+						<td><a href="https://umtc.catalog.prod.coursedog.com/courses/7906551">CSci 4211 Info</a></td>
+					</tr>
+					<tr>
+						<td>Thursday</td>
+						<td>CSci 3081W Lecture</td>
+						<td>14:30 - 15:45</td>
+						<td data-img-src="/static/img/keller.jpg">Keller Hall, 200 Union St SE, Minneapolis, MN 55455</td>
+						<td>No Phone Number</td>
+						<td><a href="https://umtc.catalog.prod.coursedog.com/courses/7930761">CSci 3081W Info</a></td>
+					</tr>
+					<tr class="highlight-row">
+						<td>Friday</td>
+						<td>CSci 3081W Lab</td>
+						<td>14:30 - 15:20</td>
+						<td data-img-src="/static/img/keller.jpg">Keller Hall, 200 Union St SE, Minneapolis, MN 55455</td>
+						<td>No Phone Number</td>
+						<td><a href="https://umtc.catalog.prod.coursedog.com/courses/7930761">CSci 3081W Info</a></td>
+					</tr>
+					<tr>
+						<td>Saturday</td>
+						<td>Lunch</td>
+						<td>13:00-14:00</td>
+						<td data-img-src="/static/img/la-casita.jpg">1925 Perimeter Dr, Roseville, MN 55113</td>
+						<td>(651) 287-4055</td>
+						<td><a href="https://www.lacasitamn.com/">La Casita Mexican Restaurant</a></td>
+					</tr>
+					<tr class="highlight-row">
+						<td>Saturday</td>
+						<td>Dinner</td>
+						<td>17:00-18:00</td>
+						<td data-img-src="/static/img/china-one.jpg">712 University Ave W, St Paul, MN 55104</td>
+						<td>(651) 298-9888</td>
+						<td><a href="http://chinaonemn.com/">China One</a></td>
+					</tr>
+					<tr>
+						<td>Sunday</td>
+						<td>Relax at Home</td>
+						<td>9:00-22:00</td>
+						<td data-img-src="/static/img/holden.jpg">1554 Midway Pkwy, St Paul, MN 55108</td>
+						<td>(612) 453-1123</td>
+						<td><a href="https://www.holdenhouse.life/?utm_source=GMB&utm_medium=Yext">Holden House</a></td>
+					</tr>
+				</tbody>
+				 
+			</table>
+				<div id="image-container">
+					<img id="large-image" src="/static/img/gophers-mascot.png" alt="Gopher-Mascot">
+				</div>
+		</div>
+		
+		<div id="grid-container">
+			<div id="directions-panel"></div>
+			<div id="map-container">
+				<div id="sched-map"></div>
+			</div>
+			<div id="menu-container">
+				<div id="search-menu">
+					<img src="/static/img/search.png" alt="Search Icon" class="menu-icon">
+					Search for Places:
+					<select id="place-type" onchange="toggleOther(this);">
+						<option value="restaurant">Restaurant</option>
+						<option value="hospital">Hospital</option>
+						<option value="parking">Parking</option>
+						<option value="supermarket">Supermarket</option>
+						<option value="university">University</option>
+						<option value="movie_theater">Movie Theater</option>
+						<option value="other">Other</option>
+					</select>
+					<input id="other-search" type="text" placeholder="Enter a type of place...">
+					<input id="search-radius" type="number" min="1" placeholder="Enter distance in meters...">
+					<button id="search-places">Search</button>
+					<button id="clear-places">Clear</button>
+				</div>
+				<div id="directions-input">
+					Directions to:
+					<img src="/static/img/direction.png" alt="Directions Icon" class="menu-icon">
+					<input id="destination" type="text" placeholder="Enter a destination...">
+					Mode of Travel:
+					<form id="travel-mode-form">
+						<div id="radio-walk-mode">
+							<input type="radio" id="walk" name="travel-mode" value="WALKING" checked>
+							<label id= "walk-mode" for="walk">Walk</label><br>
+						</div>
+						
+						<div id="radio-drive-mode">
+							<input type="radio" id="drive" name="travel-mode" value="DRIVING">
+							<label id="drive-mode" for="drive">Drive</label><br>
+						</div>
+						<div id="radio-transit-mode">
+							<input type="radio" id="transit" name="travel-mode" value="TRANSIT">
+							<label id="transit-mode" for="transit">Transit</label>
+						</div>
+					</form>
+					<button id="get-directions">Route</button>
+				</div>
+			</div>
+		</div>
+
+
+		
+		<div>For best results, use with Google Chrome <img id="chrome-icon" src="/static/img/chrome.png" alt="chrome"></div>
+		<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRiWhkXKzdmgy6WdzfnP9uCr-nwgESb3E&libraries=places&callback=setupScheduleMap"></script>
+		<script src="/static/js/script.js"></script>  
+	</body>
+   
+</html>
